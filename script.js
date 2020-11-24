@@ -24,7 +24,14 @@ function displayResults(responseJson) {
   //iterate through the items
   for ( let i=0; i< responseJson.data.length;i++){
     $('#results-list').append (
-      `<li><h3>${responseJson.data[i].fullName}</h3></li>`
+      `<li>
+        <h3>${responseJson.data[i].fullName}</h3>
+        <p>${responseJson.data[i].description}</p>
+        <p>
+          ${responseJson.data[i].addresses[0].line1}, ${responseJson.data[i].addresses[0].city}, ${responseJson.data[i].addresses[0].stateCode} ${responseJson.data[i].addresses[0].postalCode}
+        </p>
+        <a href="${responseJson.data[i].url}" target="_blank">${responseJson.data[i].url}</a>
+      </li>`
     )
   }
 };

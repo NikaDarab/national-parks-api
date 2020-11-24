@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Parks</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Park Finder</h1>
 
         <form action="#" id="js-form">
-            <label for="js-search-park">Search state</label>
-            <input type="text" name= "search-park" id="js-search-state" placeholder="TX" required>
-
-            <label for="js-max-results">Maxium results to return</label>
-            <input type="number" name="max-results" id="js-max-results" value="10">
-
-            <input type="submit" value="go">
+            <label for="js-search-park">
+                State
+                <input type="text" name= "search-park" id="js-search-state" placeholder="TX" required>
+            </label>
+            <label for="js-max-results">
+                Max # of Results
+                <input type="number" name="max-results" id="js-max-results" value="10">
+            </label>
+            <input type="submit" value="Search" style="color: #fff; background-color: green;">
         </form>
-
+        
         <p id="js-error-message" class="error-message"></p>
 
         <section id="results">
