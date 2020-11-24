@@ -1,29 +1,28 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-#results-list {
-      list-style: none;
-      padding: 0;
-  }
+  box-sizing: border-box;
+}
 
-  input {
-      padding: 7px;
-      margin: 5px 0;
-      width: 100%;
-      display: block;
-  }
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#results-list {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  padding: 7px;
+  margin: 5px 0;
+  width: 100%;
+  display: block;
+}
